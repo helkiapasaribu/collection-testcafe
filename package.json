@@ -4,7 +4,7 @@
   "description": "collection web automation testing",
   "main": "index.js",
   "scripts": {
-    "test-pasaribu": "node_modules/.bin/testcafe chrome ./collections"
+    "test-pasaribu": "node_modules/.bin/testcafe chrome ./collections --reporter html:report.html"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,8 @@
   "author": "helkia",
   "license": "ISC",
   "dependencies": {
-    "testcafe": "^1.9.4"
+    "testcafe": "^1.9.4",
+    "testcafe-reporter-html": "^1.4.6"
   }
 }
+
